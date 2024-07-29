@@ -1,0 +1,84 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    background-color: #e8f0f8 !important;
+}
+
+.navbar-light .navbar-brand {
+    color: orange;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0 / 55%);
+    padding: 10px 35px;
+    font-weight: bold;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 60%;
+}
+
+
+.column {
+    max-width: 95%;
+    /* height: 300px; */
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column p{
+    text-align: justify;
+}
+
+.column:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* portfolio section  */
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e9c1aa 0%, #f5c669 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    border: 3px solid #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.circle {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #232222;
+}
+.portfolio-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
